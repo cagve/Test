@@ -1,22 +1,9 @@
-# Programación integrada. Programando para multiples versiones de python
+# Programación Integrada: Producto de una Lista y Compatibilidad de Python 3
 
 ## Objetivo
-
-El objetivo de la practica es crear un programa que devuelva la media de una lista de números y testearlo con pytest. 
-
-Una posible solución
-```python
-def media(numbers):
-    return sum(numbers) / len(numbers)              
-```
-Al pasar el pytest en local funciona porque utilizan python3, pero en github actions saldra que los test fallan en python2.
-
-```python
-def media(numbers):
-    return sum(numbers) / float(len(numbers))
-```
+1. El objetivo de esta práctica es crear un programa que calcule el **producto de todos los números en una lista**.  
+2. Probar que pasan los test utilizando `pytest`
+3. Ejecutar los tests en **múltiples subversiones de Python 3** usando **GitHub Actions**.
 
 
-El yaml de github action esta preparado para ejecutar dichos tests en versiones diferentes de python y en python2 no funciona por lo que da un error.
-
-
+Vemos como en algunas versiones funciona y en otras no

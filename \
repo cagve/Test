@@ -1,0 +1,20 @@
+# Programación Integrada: Producto de una Lista y Compatibilidad de Python 3
+
+## Objetivo
+El objetivo de esta práctica es crear un programa que calcule el **producto de todos los números en una lista**.  
+2. Escribir **tests con pytest** para validar su funcionamiento.  
+3. Ejecutar los tests en **múltiples subversiones de Python 3** usando **GitHub Actions**, mostrando cómo algunas funciones solo existen en versiones recientes de Python 3.
+
+> ⚠ Esta práctica permite explorar la compatibilidad entre subversiones de Python 3 (por ejemplo, 3.7 vs 3.11) y aprender la importancia de probar el código en distintos entornos.
+
+---
+
+## Función ejemplo
+
+```python
+# main.py
+import math
+
+def product(numbers):
+    return math.prod(numbers)
+
