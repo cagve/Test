@@ -1,6 +1,5 @@
-## CALCULA LA MEDIA DE DOS NUMEROS
-def media(numbers):
-    # return sum(numbers) / len(numbers)              # SOLO FUNCIONA EN PYTHON3
-    return sum(numbers) / float(len(numbers))         # FUNCIONA EN AMBAS
+import math
 
+def product(numbers):
+    return math.prod(numbers)
 

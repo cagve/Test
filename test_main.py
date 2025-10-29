@@ -1,11 +1,6 @@
-from main import media
+from main import product
 
-def test_media_basica():
-    assert media([1, 2, 3, 4, 5]) == 3
-
-def test_media_negativos():
-    assert media([-1, -2, -3, -4]) == -2.5
-
-def test_media_decimales():
-    assert media([1, 2, 2]) == 5 / 3  # Esto falla en Python 2 (5/3 == 1)
-
+def test_product_basico():
+    assert product([1,2,3,4]) == 24
+    assert product([5,0,2]) == 0
+    assert product([7]) == 7
