@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [2.7, 3.11]  # Aquí probamos Python 2.7 y Python 3.11
+        python-version: [2.7, 3.11]  
+      fail-fast: false
 
     steps:
       - name: Checkout code
