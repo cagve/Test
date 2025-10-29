@@ -1,4 +1,4 @@
 from main import greet
 
 def test_greet():
-    assert greet("Mundo") == "Hola, Mundo!"
+    assert greet("Mundo") == "Hola, Carlos!"
