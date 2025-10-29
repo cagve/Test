@@ -1,4 +1,4 @@
-# Programación Integrada: Producto de una Lista y Compatibilidad de Python 3
+# CI y versiones de python
 
 ## Objetivo
 1. El objetivo de esta práctica es crear un programa que calcule el **producto de todos los números en una lista**.  
