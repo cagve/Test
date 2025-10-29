@@ -1,15 +1,11 @@
-import pytest
-from main import is_perfect
+from main import media
 
-@pytest.mark.parametrize("numero", [6, 28, 496, 8128])
-def test_numeros_perfectos(numero):
-    assert is_perfect(numero)
+def test_media_basica():
+    assert media([1, 2, 3, 4, 5]) == 3
 
-@pytest.mark.parametrize("numero", [1, 2, 3, 4, 5, 7, 10, 12, 20, 100])
-def test_numeros_no_perfectos(numero):
-    assert not is_perfect(numero)
+def test_media_negativos():
+    assert media([-1, -2, -3, -4]) == -2.5
 
-@pytest.mark.parametrize("numero", [0, -1, -6, -28])
-def test_valores_invalidos(numero):
-    with pytest.raises(ValueError):
-        is_perfect(numero)
+def test_media_decimales():
+    assert media([1, 2, 2]) == 5 / 3  # Esto falla en Python 2 (5/3 == 1)
+

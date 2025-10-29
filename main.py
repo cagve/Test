@@ -1,9 +1,6 @@
-#Un número perfecto es un número entero positivo que es igual a la suma de sus divisores.
+## CALCULA LA MEDIA DE DOS NUMEROS
+def media(numbers):
+    return sum(numbers) / len(numbers)              # SOLO FUNCIONA EN PYTHON3
+    # return sum(numbers) / float(len(numbers)) -- python2
 
-def is_perfect(n):
-    ### ELIMINAR PARA QUE LOS ALUMNOS RESUELVAN
-    if n <= 0:
-        raise ValueError("El número debe ser positivo")
-    suM = sum(i for i in range(1, n) if n % i == 0)
-    return suM == n
 
